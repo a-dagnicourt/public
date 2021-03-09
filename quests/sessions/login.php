@@ -3,6 +3,7 @@ if (!empty($_POST)) {
     if (!empty($_POST['loginname'])) {
         session_start();
         $_SESSION['username'] = $_POST['loginname'];
+        $_SESSION['cart'] = array();
         header('Location: index.php');
         exit();
     }

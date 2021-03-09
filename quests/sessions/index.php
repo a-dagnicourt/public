@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+array_push($_SESSION['cart'], $_GET["add_to_cart"]);
+print_r($_SESSION['cart']);
 ?>
 <?php require 'inc/data/products.php'; ?>
 <?php require 'inc/head.php'; ?>
