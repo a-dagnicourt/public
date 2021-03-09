@@ -2,6 +2,9 @@
 require_once('inc/data/products.php');
 
 session_start();
+if (empty($_SESSION['username'])) {
+    header('Location: login.php');
+}
 ?>
 
 <?php require 'inc/head.php'; ?>
