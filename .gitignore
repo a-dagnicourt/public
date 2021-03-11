@@ -1,4 +1,4 @@
 /.vscode
 /quests/composer/vendor
 /quests/twig/vendor
-/PDO/connect.php
+/quests/PDO/connect.php
